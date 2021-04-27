@@ -7,7 +7,7 @@ const FilmStripe = ({ images }) => {
 
   console.log(tab);
 
-  return <div>{tab}</div>;
+  return <div className="stripe">{tab}</div>;
 };
 
 export default FilmStripe;
