@@ -40,3 +40,18 @@ h2 {
   color: white;
   margin-bottom: 15px;
 }
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
