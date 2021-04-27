@@ -1,26 +1,13 @@
 import FilmPicture from "./FilmPicture";
-import categories from "../movies.json";
 
-const FilmStripe = ({ categoryIndex }) => {
-  categories.map((movie, index) => {
-    movie.images.map((image, index) => {
-      console.log("It's working", index, image);
-      return <FilmPicture categoryIndex={categoryIndex} imageIndex={index} />;
-    });
+const FilmStripe = ({ images }) => {
+  let tab = images.map((url) => {
+    return <FilmPicture url={url} />;
   });
 
-  console.log("FilmStripe==>", FilmStripe);
-  return (
-    <div className="stripe">
-      <FilmPicture categoryIndex={categoryIndex} imageIndex={7} />
-      <FilmPicture categoryIndex={categoryIndex} imageIndex={5} />
-      <FilmPicture categoryIndex={categoryIndex} imageIndex={10} />
-      <FilmPicture categoryIndex={categoryIndex} imageIndex={20} />
-      <FilmPicture categoryIndex={categoryIndex} imageIndex={7} />
-    </div>
+  console.log(tab);
 
-    /* <div className="stripe">{FilmStripe}</div> <==== LIGNE POSANT PROBLEME !!   */
-  );
+  return <div>{tab}</div>;
 };
 
 export default FilmStripe;

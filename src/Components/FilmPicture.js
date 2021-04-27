@@ -1,16 +1,7 @@
-import categories from "../movies.json";
-import FilmStripe from "./FilmStripe";
-
 const FilmPicture = (props) => {
-  const { categoryIndex, imageIndex } = props;
+  const { url } = props;
 
-  return (
-    <img
-      src={categories[categoryIndex].images[imageIndex]}
-      alt=""
-      className="film"
-    />
-  );
+  return <img src={url} alt="" className="film" />;
 };
 
 export default FilmPicture;
