@@ -1,1 +1,18 @@
 /* Other rules */
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+}
+
+.stripe {
+  display: flex;
+  flex-direction: row;
+}
+
+.film {
+  width: 221px;
+  height: 127px;
+  border: darkblue 1px solid;
+}
